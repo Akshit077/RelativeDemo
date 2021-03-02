@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/colorsbackground">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Restaurants"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#fa7e1e"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="60sp"
+        >
+        <ImageView
+            android:layout_width="400sp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ice Cream Sundae"
+            android:layout_marginTop="180sp"
+            android:layout_marginLeft="40sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GIP Mall,Noida"
+            android:layout_marginTop="210sp"
+            android:layout_marginLeft="40sp"
+            android:textColor="@color/black" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240sp"
+            android:numStars="5"
+            android:rating="3"
+            android:progressTint="@color/orange"
+            android:layout_marginLeft="40sp"
+            style="?android:attr/ratingBarStyleSmall"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="520 reviews"
+            android:layout_marginTop="240sp"
+            android:layout_marginLeft="125sp"
+            />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
